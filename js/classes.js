@@ -1,6 +1,6 @@
 // Class for one game. Every game in the site is an object of this class.
 class Game {
-    constructor(id, title, genre, platforms, price, rating, description) {
+    constructor(id, title, genre, platforms, price, rating, description, image) {
         this.id = id;
         this.title = title;
         this.genre = genre;
@@ -8,7 +8,8 @@ class Game {
         this.price = price;
         this.rating = rating;
         this.description = description;
-        this.image = `https://picsum.photos/seed/${title.replace(/ /g, '')}/400/240`;
+        // own picture from the assets folder, or a placeholder if no picture is given
+        this.image = image || `https://picsum.photos/seed/${title.replace(/ /g, '')}/400/240`;
     }
 
     getPriceText() {
