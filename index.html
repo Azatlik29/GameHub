@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,7 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <button id="theme-btn" class="btn btn-sm btn-outline-light ms-lg-3" type="button">Light mode</button>
                 </div>
             </div>
         </nav>
@@ -40,7 +41,7 @@
 
         <section class="container my-5">
             <div class="stats">
-                <div class="stat"><span class="stat-num">120+</span> Games</div>
+                <div class="stat"><span class="stat-num" id="stat-games">9</span> Games</div>
                 <div class="stat"><span class="stat-num">5k</span> Players</div>
                 <div class="stat"><span class="stat-num">40</span> Tournaments</div>
             </div>
@@ -48,41 +49,7 @@
 
         <section class="container">
             <h2 class="section-title text-center mb-4">Featured Games</h2>
-            <div class="row g-4">
-            <div class="col-md-4">
-                <article class="game-card">
-                    <span class="badge-genre">RPG</span>
-                    <img src="assets/skyrim.jpeg" alt="Skyrim" class="img-fluid">
-                    <div class="game-card-body">
-                        <h3 class="h5">Skyrim</h3>
-                        <p class="mb-2">Platforms: PC / PS4</p>
-                        <a href="games.html" class="btn btn-sm btn-accent">Details</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="game-card">
-                    <span class="badge-genre">Racing</span>
-                    <img src="assets/forza.jpeg" alt="Forza Horizon 5" class="img-fluid">
-                    <div class="game-card-body">
-                        <h3 class="h5">Forza Horizon 5</h3>
-                        <p class="mb-2">Platforms: PC / Xbox</p>
-                        <a href="games.html" class="btn btn-sm btn-accent">Details</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="game-card">
-                    <span class="badge-genre">Casual</span>
-                    <img src="assets/stardew.jpg" alt="Stardew valley" class="img-fluid">
-                    <div class="game-card-body">
-                        <h3 class="h5">Stardew valley</h3>
-                        <p class="mb-2">Platforms:Cross-platform</p>
-                        <a href="games.html" class="btn btn-sm btn-accent">Details</a>
-                    </div>
-                </article>
-            </div>
-            </div>
+            <div class="row g-4" id="featured-games"></div>
         </section>
 
         <section class="container my-5">
@@ -101,6 +68,12 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

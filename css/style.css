@@ -92,3 +92,22 @@ a { color: var(--accent); }
     .hero h1 { font-size: 2rem; }
     .footer-flex { flex-direction: column; text-align: center; }
 }
+
+/* ===== Final project additions ===== */
+/* Light theme (switched with the button in the navbar) */
+:root[data-bs-theme="light"] {
+    --bg: #f1f4fa;
+    --panel: #ffffff;
+    --accent: #00a67e;
+    --text: #1b2038;
+}
+:root[data-bs-theme="light"] .game-card,
+:root[data-bs-theme="light"] .stat { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+.hero, .site-footer { color: #e8eaf6; }
+#message { background-color: var(--panel); color: var(--text); border-color: #333a5e; }
+
+.game-desc { display: none; font-size: 0.9rem; }
+.game-card-body .btn { margin-top: 4px; margin-right: 4px; }
+.no-results { grid-column: 1 / -1; text-align: center; }
+.deal-img { width: 100%; height: 140px; object-fit: cover; display: block; }
+.event-row { cursor: pointer; }

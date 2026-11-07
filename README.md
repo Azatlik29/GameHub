@@ -1,32 +1,33 @@
 # GameHub
 
-**Author:** Azat Zholdygali
+**Course:** Web Technologies - Midterm, Endterm and Final project (one project, three stages)
 **Group:** SE-2526
-**Course:** Web Technologies, Midterm Project
+**Members:** Azat Zholdygali (add other group members here)
+**Live site:** add your GitHub Pages link here
+**Repository:** add your GitHub link here
 
-## Topic
-GameHub is a multi-page responsive website for a gaming community: game library, tournament schedule, about page and contact form.
+## Description
+GameHub is a responsive website for a gaming community. Pages: Home, Games, Tournaments, About, Contact.
 
-## Pages
-1. `index.html` - Home (hero, stats, featured games)
-2. `games.html` - Game library (CSS Grid)
-3. `tournaments.html` - Schedule table and rules
-4. `about.html` - About the project
-5. `contact.html` - Contact form
 
-## Features
-- Bootstrap 5 navbar (sticky, collapses on mobile) on every page
-- Semantic HTML5: `header`, `nav`, `main`, `section`, `article`, `footer`
-- Table (tournaments) and form (contact)
-- Flexbox: stats row, footer
-- CSS Grid: game library
-- Positioning: `sticky` navbar, `relative` card with `absolute` genre badge
-- Media queries for tablet (992px) and mobile (576px)
-- Bootstrap grid and utility classes (`row`, `col-*`, `my-5`, `text-center`, `btn`)
-- Placeholder images from picsum.photos
+## Features by stage
+**Midterm:** 5 pages, Bootstrap navbar and grid, semantic HTML, table, form, Flexbox, CSS Grid, positioning, media queries (992px, 576px).
 
-## Run
-Open `index.html` in a browser (internet needed for Bootstrap CDN and images).
+**Endterm:** arrays (`games`), loops (`for...of`, `forEach`), reusable functions with return values, cards created from the array, `addEventListener` (click, input, change, submit, DOMContentLoaded), form validation with messages next to fields, jQuery (selectors, `siblings`, `children`, `closest`, `find`, `fadeIn`, `slideToggle`).
 
-## Live site
-Add your GitHub Pages link here.
+**Final (new features):**
+1. **API integration** - live deals from CheapShark with loading, success, empty and error states (`fetch` + `async/await`).
+2. **OOP** - classes `Game` and `FavoritesList`; 9 `Game` objects are created and used for the cards.
+3. **localStorage** - favorites (`gamehub_favorites`) and theme (`gamehub_theme`), saved as JSON, restored on load, can be cleared.
+4. **Search, filter and sort** on the Games page.
+5. **Theme switcher** (light/dark) with saved preference.
+
+## API
+CheapShark Deals API: `https://www.cheapshark.com/api/1.0/deals` (free, no API key needed).
+
+## Structure
+```
+index.html, games.html, tournaments.html, about.html, contact.html
+css/style.css
+js/ storage.js, classes.js, data.js, main.js, home.js, games.js, deals.js, tournaments.js, contact.js
+```

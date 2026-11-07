@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,7 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     </ul>
+                    <button id="theme-btn" class="btn btn-sm btn-outline-light ms-lg-3" type="button">Light mode</button>
                 </div>
             </div>
         </nav>
@@ -31,29 +32,35 @@
     <main>
         <section class="container my-5">
             <h1 class="section-title">Contact Us</h1>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name">
+                    <div class="invalid-feedback" id="name-error"></div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email">
+                    <div class="invalid-feedback" id="email-error"></div>
                 </div>
                 <div class="mb-3">
                     <label for="topic" class="form-label">Topic</label>
                     <select class="form-select" id="topic">
+                        <option value="">Choose a topic...</option>
                         <option>Game suggestion</option>
-                        <option>Tournament question</option>
+                        <option>Tournament registration</option>
                         <option>Other</option>
                     </select>
+                    <div class="invalid-feedback" id="topic-error"></div>
                 </div>
                 <div class="mb-3">
-                    <label for="msg" class="form-label">Message</label>
-                    <textarea class="form-control" id="msg" rows="4" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                    <div class="invalid-feedback" id="message-error"></div>
                 </div>
                 <button type="submit" class="btn btn-accent">Send</button>
             </form>
+            <div id="form-success" class="alert alert-success mt-3" style="display: none;">Thank you! Your message was sent.</div>
         </section>
     </main>
 
@@ -64,6 +71,12 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
