@@ -2,9 +2,9 @@
 
 **Course:** Web Technologies - Midterm, Endterm and Final project (one project, three stages)
 **Group:** SE-2526
-**Members:** Azat Zholdygali (add other group members here)
-**Live site:** add your GitHub Pages link here
-**Repository:** add your GitHub link here
+**Members:** Azat Zholdygali 
+**Live site:** https://azatlik29.github.io/GameHub/
+
 
 ## Description
 GameHub is a responsive website for a gaming community. Pages: Home, Games, Tournaments, About, Contact.
